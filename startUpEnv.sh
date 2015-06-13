@@ -1,3 +1,2 @@
 #!/bin/bash
-source ~/.profile
-workon cv
+source ~/.profile && workon cv
