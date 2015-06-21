@@ -28,7 +28,7 @@ cv2.waitKey(0)
 fig = plt.figure()
 
 ax = fig.add_subplot(131)
-hist = cv2.calchist([chans[1], chans[0]], [0, 1], None, [32, 32], [0, 256, 0, 256])
+hist = cv2.calcHist([chans[1], chans[0]], [0, 1], None, [32, 32], [0, 256, 0, 256])
 
 p = ax.imshow(hist, interpolation = "nearest")
 

@@ -50,3 +50,4 @@ blurred = np.hstack([
 ])
 cv2.imshow("Bilateral", blurred)
 cv2.waitKey(0)
+cv2.destroyAllWindows()

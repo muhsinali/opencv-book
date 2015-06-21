@@ -41,7 +41,4 @@ for (i, c) in enumerate(cnts):
 
 	cv2.imshow("Masked Coin", cv2.bitwise_and(coin, coin, mask = mask))
 	cv2.waitKey(0)
-
-
-
-
+cv2.destroyAllWindows()
