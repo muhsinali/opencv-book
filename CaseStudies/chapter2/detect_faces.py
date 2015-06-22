@@ -10,7 +10,7 @@ image = cv2.imread(args["image"])
 gray = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
 
 fd = FaceDetector(args["face"])
-faceRects = fd.detect(gray)
+faceRects = fd.detect(gray, scaleFactor = 1.2)
 print "I found %d face(s)" % len(faceRects)
 
 for (x, y, w, h) in faceRects:
